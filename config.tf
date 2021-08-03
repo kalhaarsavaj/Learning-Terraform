@@ -28,7 +28,7 @@ resource "docker_container" "nginx-server" {
   }
   volumes {
     container_path  = "/usr/share/nginx/html"
-    host_path = "/tmp/tutorial/www"
+    host_path = "/home/savaj/terraform/html"
     read_only = true
   }
 }
